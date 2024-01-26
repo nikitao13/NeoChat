@@ -70,7 +70,7 @@ main {
 #chat-history {
   height: 75%;
   overflow-y: scroll;
-  border: 1px solid #3FFF00;
+  border: 1px solid rgba(63, 255, 0, 0.75);
   border-top-left-radius: 1.5rem;
   border-top-right-radius: 1.5rem;
   color: #3FFF00;
@@ -80,18 +80,19 @@ main {
 #chat-input {
   height: 5%;
   justify-content: center;
-  border-left: 1px solid #3FFF00;
-  border-right: 1px solid #3FFF00;
-  border-bottom: 1px solid #3FFF00;
+  border-left: 1px solid rgba(63, 255, 0, 0.75);
+  border-right: 1px solid rgba(63, 255, 0, 0.75);
+  border-bottom: 1px solid rgba(63, 255, 0, 0.75);
   border-bottom-left-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
 
 }
 #input-bar {
-  height: 45%;
+  height: 40%;
   width: 100%;
   display: flex;
   flex-direction: column;
+  opacity: 90%;
 }
 #form {
   height: 100%;
@@ -120,6 +121,14 @@ input {
   justify-content: center;
   align-items: center;
   border-radius: 0 1.5rem 1.5rem 0;
+  font-size: 1.4rem;
+  color: grey;
+  outline: cyan;
+}
+#send-button:hover {
+  border: transparent;
+  color: rgba(63, 255, 0, 0.75);
+  font-size: 1.45rem;
 }
 
 #chat-message-content {
@@ -149,14 +158,24 @@ input {
     border-top-right-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem;
     color: grey;
+    font-size: 1rem;
+  }
+  #send-button:hover {
+    font-size: 1.1rem;
+    color: grey;
+  }
+  #send-button:active {
+    color: #3FFF00;
   }
   #message-input {
     width: 70%;
     border-top-left-radius: 1.5rem;
     border-bottom-left-radius: 1.5rem;
+    font-size: 1rem;
+    padding-left: 1rem;
   }
   #input-bar {
-    height: 45%;
+    height: 55%;
   }
   #nav-links {
     width: 60%;
